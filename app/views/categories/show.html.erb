@@ -5,9 +5,19 @@
   <%= @category.name %>
 </p>
 
-<p>
-	<%= @post = Post.all %>
-</p>
+<table>
+  <tr>
+    <th>Posts</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+<% @post.each do |post| %>
+  <tr>
+    <td><%= link_to post.title, post %></td>
+  </tr>
+<% end %>
+</table>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
