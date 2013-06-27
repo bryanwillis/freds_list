@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id          :integer          not null, primary key
+#  title       :string(255)
+#  description :text
+#  price       :string(255)
+#  location    :string(255)
+#  category_id :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  price: MyString
+  location: MyString
+  category: 
+
+two:
+  title: MyString
+  description: MyText
+  price: MyString
+  location: MyString
+  category: 
