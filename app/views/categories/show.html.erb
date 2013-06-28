@@ -15,9 +15,10 @@
 <% @post.each do |post| %>
   <tr>
     <td><%= link_to post.title, post %></td>
+    <td><%= image_tag post.photo.url(:small) %></td>
   </tr>
 <% end %>
 </table>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<%= link_to 'Back', root_path %>

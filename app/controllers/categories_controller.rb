@@ -23,7 +23,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     @category = Category.find(params[:id])
-    @post = Post.all
+    @post = Post.where(category_id: @category.id)
 
     respond_to do |format|
       format.html # show.html.erb

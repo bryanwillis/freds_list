@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 gem "twitter-bootstrap-rails", "~> 2.2.7"
 gem "annotate", "~> 2.5.0"
+gem "paperclip", "~> 3.4.2"
 
 
 # Gems used only for assets and not required
